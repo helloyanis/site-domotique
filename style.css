@@ -1,0 +1,113 @@
+html{
+    font-family: Poppins-Regular, sans-serif;
+    background: linear-gradient(to bottom left, rgb(14,45,89), rgb(71,99,168),rgb(74,80,132)) no-repeat center center fixed;
+    background-size: cover;
+    
+}
+.modulecont{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 25px;
+    align-items: baseline;
+    align-content: space-around;
+}
+.modulecard{
+    display: block;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    background: black;
+    color: white;
+}
+.minia{
+    animation: popin 0.5s;
+}
+.minia:hover{
+    cursor: pointer;
+    transition: transform 0.3s;
+    transform: scale(1.1); /*Le bouton s'agrandit*/
+}
+  
+
+.spe{
+    animation: popin 0.5s forwards;
+    transition: transform 0.3s;
+}
+@keyframes popin {
+    /*L'animation pour confirmer (quand on passe sa souris sur le bouton il clignote en blanc)*/
+    0% {
+      opacity: 0%;
+      transform: scale(0.3);
+    }
+
+    100% {
+      opacity: 100%;
+      transform: scale(1)
+    }
+}
+.off{
+    border: 3px solid rgb(206, 205, 205);
+}
+.on{
+    border: 3px solid rgb(102, 255, 0);
+}
+.broken{
+    border: 3px solid rgb(223, 0, 0) !important;
+}
+.spe{
+    width: 70rem;
+    height: 30rem;
+    cursor: default !important;
+}
+.modulename{
+    font-size: large;
+    font-weight: 700;
+    text-align: center;
+}
+.status{
+    background-color: rgb(58, 58, 58);
+    padding: 10px;
+    border-radius: 15px;
+    color: white;
+}
+.status:hover{
+    cursor: pointer;
+    
+}
+.delete{
+    color: red;
+}
+.history{
+    background-color: rgb(58, 58, 58);
+    color: white;
+}
+.add{
+    border: 3px solid rgb(5, 108, 208);
+}
+.title{
+    color:white;
+    display: block;
+    text-align: center;
+    margin: 5px;
+    margin-bottom: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    background: black;
+    animation: popin 0.3s;
+}
+.title:hover{
+    cursor: pointer;
+}
+.column {
+    height: 120px !important;
+
+}
+#graph{
+    margin-top: 100px;
+}
+.error{
+    color: white;
+}
